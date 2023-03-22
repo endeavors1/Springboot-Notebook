@@ -21,7 +21,7 @@ import java.util.List;
 
 /**
  * @Author: yangy
- * @Description:测试类 生成
+ * @Description:测试类 生成数据库表word文档
  */
 @SpringBootTest(classes = SpringbootDatasourcesRollbackApplication.class)
 @RunWith(SpringRunner.class)
