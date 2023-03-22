@@ -72,7 +72,7 @@ public class ScrewApplicationTests {
         // 忽略表后缀
         List<String> ignoreSuffix = Arrays.asList("_test", "czb_");
 
-        List<String> designTablePrefix = Arrays.asList("flowtask");
+        List<String> designTablePrefix = Arrays.asList("flowtask","flow_tagent");
         return ProcessConfig.builder()
                 //根据名称指定表生成
                 //.designatedTableName(Arrays.asList("flowtask"))
