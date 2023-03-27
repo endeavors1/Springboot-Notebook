@@ -1,0 +1,11 @@
+# mysql配置
+spring.datasource.local.jdbc-url=jdbc:mysql://192.168.8.216:3306/itsm_zhfy?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+spring.datasource.local.username=root
+spring.datasource.local.password=root
+spring.datasource.local.driver-class-name=com.mysql.jdbc.Driver
+
+spring.datasource.remote.jdbc-url=jdbc:mysql://192.168.0.36:3306/bsm?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+spring.datasource.remote.username=root
+spring.datasource.remote.password=root
+spring.datasource.remote.driver-class-name=com.mysql.jdbc.Driver
+server.port=8887

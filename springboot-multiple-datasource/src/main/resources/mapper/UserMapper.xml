@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yangy.mutipile.data.mapper.UserMapper">
+    <insert id="insertUser">
+        replace into flow_user(user_id,user_name,user_phone) values (#{userId},#{userName},#{phone})
+    </insert>
+
+    <delete id="deleteUserByUserId">
+        delete from flow_user where user_id = #{userId}
+    </delete>
+
+    <select id="searchUserList" parameterType="java.lang.String" resultType="com.yangy.mutipile.data.dto.UserVo">
+        SELECT
+            a.`user_id` AS userId,
+            a.`user_name` AS userName,
+            a.`user_phone` AS phone
+        FROM flow_user a
+        WHERE a.user_id = #{userId}
+    </select>
+
+
+</mapper>
