@@ -14,7 +14,7 @@ public class OrderDTO {
 
     private String OrderNo;
 
-    private Map<String,Object> OrderMap;
+    private Map<String, Object> OrderMap;
 
     private List<OrderDTO> OrderList;
 }

@@ -16,7 +16,6 @@ public class SSEController {
 
     /**
      * sse 页面
-     *
      */
     @RequestMapping("/index")
     public String sse() {

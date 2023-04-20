@@ -20,8 +20,9 @@ public class StorageServiceImpl implements StorageService {
 
     /**
      * 扣减库存
+     *
      * @param productId 产品id
-     * @param count 数量
+     * @param count     数量
      * @return
      */
     @Override
@@ -29,7 +30,7 @@ public class StorageServiceImpl implements StorageService {
         String xid = RootContext.getXID();
         LOGGER.info("全局事务 xid： {}", xid);
         LOGGER.info("------->扣减库存开始");
-        storageDao.decrease(productId,count);
+        storageDao.decrease(productId, count);
         LOGGER.info("------->扣减库存结束");
     }
 }

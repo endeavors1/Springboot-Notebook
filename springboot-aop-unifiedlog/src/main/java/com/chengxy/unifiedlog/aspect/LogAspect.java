@@ -7,12 +7,14 @@ import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 /**
  * @author xiaofu
@@ -22,7 +24,7 @@ import java.lang.reflect.Method;
 @Slf4j
 @Aspect
 @Component
-//@Profile({"dev"}) //只对某个环境打印日志
+@Profile({"dev"}) //测试环境执行此代码
 public class LogAspect {
 
     private static final String LINE_SEPARATOR = System.lineSeparator();
@@ -47,6 +49,10 @@ public class LogAspect {
         HttpServletRequest request = attributes.getRequest();
 
         String methodDetailDescription = this.getAspectMethodLogDescJP(joinPoint);
+
+
+        System.out.println("--------------------:" + Arrays.toString(joinPoint.getArgs()));
+
 
         log.info("------------------------------- start --------------------------");
         /**

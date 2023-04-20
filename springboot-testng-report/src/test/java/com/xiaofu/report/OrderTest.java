@@ -38,7 +38,7 @@ public class OrderTest extends AbstractTestNGSpringContextTests {
         return new Object[][]{{1, user1}, {2, user2}};
     }
 
-    @Test(dataProvider = "paramDataProvider",groups = "user")
+    @Test(dataProvider = "paramDataProvider", groups = "user")
     public void queryUser(Integer index, User user) {
         log.info("index：{}，user: {}", index, JSON.toJSONString(user));
     }
@@ -51,51 +51,52 @@ public class OrderTest extends AbstractTestNGSpringContextTests {
     }
 
     @BeforeSuite
-    public void beforeSuite(){
+    public void beforeSuite() {
         log.info("beforeSuite");
     }
 
     @AfterSuite
-    public void afterSuite(){
+    public void afterSuite() {
         log.info("AfterSuite");
     }
 
     @BeforeClass
-    public void beforeClass(){
+    public void beforeClass() {
         log.info("BeforeClass");
     }
 
     @AfterClass
-    public void afterClass(){
+    public void afterClass() {
         log.info("AfterClass");
     }
 
     @BeforeTest
-    public void beforeTest(){
+    public void beforeTest() {
         log.info("BeforeTest");
     }
 
     @AfterTest
-    public void afterTest(){
+    public void afterTest() {
         log.info("AfterTest");
     }
 
     @BeforeGroups
-    public void beforeGroups(){
+    public void beforeGroups() {
         log.info("BeforeGroups");
     }
+
     @AfterGroups
-    public void afterGroups(){
+    public void afterGroups() {
         log.info("AfterGroups");
     }
 
     @BeforeMethod
-    public void BeforeMethod(){
+    public void BeforeMethod() {
         log.info("BeforeMethod");
     }
 
     @AfterMethod
-    public void AfterMethod(){
+    public void AfterMethod() {
         log.info("AfterMethod");
     }
 }

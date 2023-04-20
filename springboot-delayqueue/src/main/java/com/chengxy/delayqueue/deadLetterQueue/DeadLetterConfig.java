@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 public class DeadLetterConfig {
 
     /**
-     * 正常消费队列
+     * 死信队列（消费者监听这个队列拿取消息）
      */
     @Bean
     public Queue messageQueue() {
@@ -22,7 +22,7 @@ public class DeadLetterConfig {
     }
 
     /**
-     * 正常消费交换机
+     * 死信交换机交换机
      */
     @Bean
     public DirectExchange messageDirectExchange() {
@@ -40,6 +40,7 @@ public class DeadLetterConfig {
 
     /**
      * 延时队列
+     * 到期后路由转发到死信交换机 死信队列
      */
     @Bean
     public Queue delayMessageQueue() {

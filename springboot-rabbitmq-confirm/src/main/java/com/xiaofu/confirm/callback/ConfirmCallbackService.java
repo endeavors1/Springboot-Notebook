@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ConfirmCallbackService implements RabbitTemplate.ConfirmCallback {
 
+    //消息发送成功
     @Override
     public void confirm(CorrelationData correlationData, boolean ack, String cause) {
 

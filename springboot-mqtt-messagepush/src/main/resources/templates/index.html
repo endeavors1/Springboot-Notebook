@@ -50,7 +50,7 @@
         // 接收消息事件
         client.onMessageArrived = function (message) {
             console.log("接受主题： " + message.destinationName + "的消息： " + message.payloadString);
-            $("#arrivedDiv").append("<br/>"+message.payloadString);
+            $("#arrivedDiv").append("<br/>" + message.payloadString);
             var count = $("#count").text();
             count = Number(count) + 1;
             $("#count").text(count);

@@ -9,7 +9,7 @@ public enum DataSourceType {
     private String type;
     @Getter
     private String name;
- 
+
     DataSourceType(String type, String name) {
         this.type = type;
         this.name = name;

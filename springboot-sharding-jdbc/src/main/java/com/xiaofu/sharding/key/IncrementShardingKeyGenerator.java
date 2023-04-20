@@ -25,16 +25,16 @@ import java.util.Properties;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public final class IncrementShardingKeyGenerator implements ShardingKeyGenerator {
-    
+
     @Getter
     private final String type = "INCREMENT";
-    
+
     private final AtomicInteger count = new AtomicInteger();
-    
+
     @Getter
     @Setter
     private Properties properties = new Properties();
-    
+
     @Override
     public Comparable<?> generateKey() {
         return count.incrementAndGet();

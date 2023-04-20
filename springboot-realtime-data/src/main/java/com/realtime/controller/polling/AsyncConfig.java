@@ -17,7 +17,7 @@ public class AsyncConfig implements WebMvcConfigurer {
     public static final long TIME_OUT = 10000L;
 
     @Bean
-    public ThreadPoolTaskExecutor workerTaskExecutor(){
+    public ThreadPoolTaskExecutor workerTaskExecutor() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
         executor.setCorePoolSize(10);
         executor.setMaxPoolSize(25);
@@ -26,7 +26,7 @@ public class AsyncConfig implements WebMvcConfigurer {
     }
 
     @Override
-    public void configureAsyncSupport(AsyncSupportConfigurer configurer){
+    public void configureAsyncSupport(AsyncSupportConfigurer configurer) {
         configurer.setTaskExecutor(workerTaskExecutor());
         configurer.setDefaultTimeout(TIME_OUT);
     }

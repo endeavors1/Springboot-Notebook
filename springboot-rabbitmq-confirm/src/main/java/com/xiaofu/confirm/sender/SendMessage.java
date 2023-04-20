@@ -63,5 +63,9 @@ public class SendMessage {
                     return message;
                 },
                 new CorrelationData(UUID.randomUUID().toString()));
+
+
+        //rabbitTemplate.convertAndSend(exchange, routingKey, msg);
+
     }
 }

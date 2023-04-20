@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yangy.mutipile.data.mapper.NewAuthorsMapper">
+
+
+    <select id="streamExportNew" parameterType="com.yangy.mutipile.data.dto.Authors"
+            resultType="com.yangy.mutipile.data.dto.Authors" fetchSize="-2147483648">
+        select * from authors
+    </select>
+
+
+</mapper>

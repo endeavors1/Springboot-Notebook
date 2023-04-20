@@ -22,8 +22,11 @@ public class Order implements Delayed {
      */
     String name;
 
+    private long delayTime;
+
     public Order(String name, long time, TimeUnit unit) {
         this.name = name;
+        this.delayTime = unit.toMillis(time);
         this.time = System.currentTimeMillis() + (time > 0 ? unit.toMillis(time) : 0);
     }
 
@@ -41,5 +44,16 @@ public class Order implements Delayed {
         } else {
             return 1;
         }
+    }
+
+
+    @Override
+    public String toString() {
+        return "[name="+this.name+",delayTime:"+this.time+",delayTime:"+getDelayTime()+"]";
+    }
+
+
+    public String getDelayTime(){
+        return String.valueOf(this.delayTime);
     }
 }

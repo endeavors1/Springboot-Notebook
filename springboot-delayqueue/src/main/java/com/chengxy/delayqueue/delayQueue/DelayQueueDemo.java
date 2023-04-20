@@ -36,7 +36,7 @@ public class DelayQueueDemo {
 
             if (task1 != null) {
                 System.out.format("订单:{%s}被取消, 取消时间:{%s}\n", task1.name, LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
-            }else{
+            } else {
                 System.out.println("null");
             }
         }

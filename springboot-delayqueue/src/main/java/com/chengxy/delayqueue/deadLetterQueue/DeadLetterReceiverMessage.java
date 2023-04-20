@@ -10,7 +10,7 @@ import java.util.Date;
 
 /**
  * @Author: xiaofu
- * @Description:
+ * @Description: 监听死信队列 消费延时消息
  */
 @Slf4j
 @Component
@@ -20,7 +20,8 @@ public class DeadLetterReceiverMessage {
     @RabbitHandler
     public void receiver(String val) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        System.out.println("收到延时消息时间："+sdf.format(new Date()) + " Delay sent.");
+        System.out.println("收到延时消息时间：" + sdf.format(new Date()) + " Delay sent.");
         System.out.println("收到延时消息了:" + val);
+        System.out.println("执行业务 取消该工单");
     }
 }

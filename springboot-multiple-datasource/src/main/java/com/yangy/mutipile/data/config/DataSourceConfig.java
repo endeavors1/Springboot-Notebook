@@ -8,19 +8,23 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
+
 import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
+
 /**
-* 数据库配置
-* @date 2022/5/19
-*/
+ * 数据库配置
+ *
+ * @date 2022/5/19
+ */
 @Configuration
 public class DataSourceConfig {
 
     /**
      * 数据源1
      * spring.datasource.db1：application.properties中对应属性的前缀
+     *
      * @return
      */
     @Bean(name = "db1")
@@ -32,6 +36,7 @@ public class DataSourceConfig {
     /**
      * 数据源2
      * spring.datasource.db2：application.properties中对应属性的前缀
+     *
      * @return
      */
     @Bean(name = "db2")
@@ -42,6 +47,7 @@ public class DataSourceConfig {
 
     /**
      * 动态数据源: 通过AOP在不同数据源之间动态切换
+     *
      * @return
      */
     @Primary
@@ -63,6 +69,7 @@ public class DataSourceConfig {
      * 配置多数据源后IOC中存在多个数据源了，事务管理器需要重新配置，不然器不知道选择哪个数据源
      * 事务管理器此时管理的数据源将是动态数据源dynamicDataSource
      * 配置@Transactional注解
+     *
      * @return
      */
     @Bean

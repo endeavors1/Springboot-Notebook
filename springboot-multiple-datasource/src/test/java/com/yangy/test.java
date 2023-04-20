@@ -24,14 +24,14 @@ public class test {
 
 
     @Test
-    public void save(){
-        UserVo userVo = new UserVo("zhangsan","张三","19888889999");
-        System.out.println("保存db1结果:"+userMapper.insertUser(userVo));
+    public void save() {
+        UserVo userVo = new UserVo("zhangsan", "张三", "19888889999");
+        System.out.println("保存db1结果:" + userMapper.insertUser(userVo));
 
 
         //切换db2
         DataSourceContextHolder.setDb("db2");
-        System.out.println("保存db2结果:"+userMapper.insertUser(userVo));
+        System.out.println("保存db2结果:" + userMapper.insertUser(userVo));
     }
 
 }

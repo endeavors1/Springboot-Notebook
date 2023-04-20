@@ -11,7 +11,7 @@ import lombok.extern.slf4j.Slf4j;
  **/
 @Slf4j
 public class DataSourceContextHolder {
-    private static final ThreadLocal<String> contextHolder  = new ThreadLocal<>();
+    private static final ThreadLocal<String> contextHolder = new ThreadLocal<>();
     public static final String DEFAULT_DS = "db1";//默认数据源
 
     public static ThreadLocal<String> getContextHolder() {
@@ -19,12 +19,12 @@ public class DataSourceContextHolder {
     }
 
     public static String getDb() {
-        System.out.println("当前datasource："+contextHolder.get());
+        System.out.println("当前datasource：" + contextHolder.get());
         return contextHolder.get();
     }
 
     public static void setDb(String dbType) {
-        log.info("dataSource切换到："+dbType);
+        log.info("dataSource切换到：" + dbType);
         contextHolder.set(dbType);
     }
 

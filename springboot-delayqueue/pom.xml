@@ -17,7 +17,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
-            <version>1.5.7.RELEASE</version>
         </dependency>
 
         <dependency>
@@ -37,10 +36,16 @@
             <artifactId>spring-boot-starter-quartz</artifactId>
         </dependency>
 
-        <dependency>
+<!--        <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
             <version>[4.1.42,)</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>3.13.1</version>
         </dependency>
 
     </dependencies>

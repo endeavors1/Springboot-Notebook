@@ -68,12 +68,13 @@ public class Resp<T> implements Serializable {
                 .setMessage(OK_MESSAGE)
                 .setData(data);
     }
+
     /**
      * Error resp.
      *
-     * @param <D>         the type parameter
-     * @param code        the code
-     * @param message     the message
+     * @param <D>     the type parameter
+     * @param code    the code
+     * @param message the message
      * @return the ret
      * @author xiaofu
      * @date 2019年02月14日 19时16分55秒

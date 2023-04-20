@@ -25,7 +25,7 @@
         }
         // 接听服务器发回的信息并处理展示
         ws.onmessage = function (data) {
-           $("#arrivedDiv").append("<br/>"+data.data);
+            $("#arrivedDiv").append("<br/>" + data.data);
             var count = $("#count").text();
             count = Number(count) + 1;
             $("#count").text(count);
@@ -45,7 +45,7 @@
         function sendMessage() {
             var content = $("#message").val();
             $.ajax({
-                url: '/socket/publish?userId=10086&message='+content,
+                url: '/socket/publish?userId=10086&message=' + content,
                 type: 'GET',
                 success: function (data) {
                     console.log(data)

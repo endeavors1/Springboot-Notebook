@@ -11,9 +11,9 @@
 
     <select id="searchUserList" parameterType="java.lang.String" resultType="com.yangy.mutipile.data.dto.UserVo">
         SELECT
-            a.`user_id` AS userId,
-            a.`user_name` AS userName,
-            a.`user_phone` AS phone
+        a.`user_id` AS userId,
+        a.`user_name` AS userName,
+        a.`user_phone` AS phone
         FROM flow_user a
         WHERE a.user_id = #{userId}
     </select>

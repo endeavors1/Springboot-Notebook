@@ -13,7 +13,7 @@ public class UserVo {
     private String UserName;
     private String phone;
 
-    public UserVo(String _userId, String _userName,String _phone){
+    public UserVo(String _userId, String _userName, String _phone) {
         this.userId = _userId;
         this.UserName = _userName;
         this.phone = _phone;

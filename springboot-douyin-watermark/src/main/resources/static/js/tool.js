@@ -4,6 +4,7 @@
  * @LastEditTime: 2020-07-28 09:20:25
  * @FilePath: \removelogo\static\js\ymtool.js
  */
+
 //判空
 function isEmpty(obj) {
     if (typeof obj == "undefined" || obj == null || obj == "") {
@@ -12,6 +13,7 @@ function isEmpty(obj) {
         return false;
     }
 }
+
 //吧php返回的json字符串转换成json对象
 function json_p(responseText) {
     var rows = responseText.toString().replace(/Array/, '');
@@ -43,12 +45,12 @@ function formatDate(date) {
 }
 
 
-
 var minute = 1000 * 60;
 var hour = minute * 60;
 var day = hour * 24;
 var halfamonth = day * 15;
 var month = day * 30;
+
 //时间差
 function getDateDiff(setdateTimeStamp) {
     var dateTimeStamp = new Date(setdateTimeStamp);

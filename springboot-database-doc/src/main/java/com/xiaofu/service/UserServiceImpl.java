@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  **/
 
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
     @Override
     public void searchUser() {
         System.out.println("method exec!!!!");

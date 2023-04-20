@@ -24,24 +24,23 @@ public class UserController {
     UserService userService;
 
     @RequestMapping("/searchUser")
-    public List<UserVo> searchUserList(String userName){
+    public List<UserVo> searchUserList(String userName) {
         return userService.searchUserList(userName);
     }
 
 
     @RequestMapping("/insertUser")
-    public void insertUser(UserVo userVo){
+    public void insertUser(UserVo userVo) {
         userService.insertUser(userVo);
-        System.out.println("插入用户："+userVo+" success!");
+        System.out.println("插入用户：" + userVo + " success!");
     }
 
 
     @RequestMapping("/deleteUser")
-    public void deleteUser(String userId){
+    public void deleteUser(String userId) {
         userService.deleteUserByUserId(userId);
-        System.out.println("删除用户："+userId+" success!");
+        System.out.println("删除用户：" + userId + " success!");
     }
-
 
 
 }

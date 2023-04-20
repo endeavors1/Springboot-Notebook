@@ -15,16 +15,15 @@
 </div>
 
 ![](wx/person.png)
-[**作者小富，目前就职京东，点击一起来了解下**](https://mp.weixin.qq.com/s?__biz=MzAxNTM4NzAyNg==&mid=2247500646&idx=1&sn=5a0993997dc1fc609da4eda5ba610681&chksm=9b86539bacf1da8d2bc22b569d27e1b7b85a21a0ec7d5a5f4a6660148a5f40f076e2d42e4885&token=1045698719&lang=zh_CN#rd)
+[**
+作者小富，目前就职京东，点击一起来了解下**](https://mp.weixin.qq.com/s?__biz=MzAxNTM4NzAyNg==&mid=2247500646&idx=1&sn=5a0993997dc1fc609da4eda5ba610681&chksm=9b86539bacf1da8d2bc22b569d27e1b7b85a21a0ec7d5a5f4a6660148a5f40f076e2d42e4885&token=1045698719&lang=zh_CN#rd)
 
 ---
 
 ### 介绍
 
-**Springboot-Notebook** 一个以 `springboot` 为基础开发框架，
-整合 `Redis` 、`Mysql` 、 `Rabbitmq` 、`ES` 、`MongoDB`、`sharding-jdbc
-分库分表`、`zookeeper` 、`web人脸识别` 、`实时消息推送` 、`SQL优化`、`注册中心` 、`数据脱敏` 等互联网主流技术，
-文章图解理论配合实战案例，实现开发中常见功能点的综合项目。
+**Springboot-Notebook** 一个以 `springboot` 为基础开发框架， 整合 `Redis` 、`Mysql` 、 `Rabbitmq` 、`ES` 、`MongoDB`、`sharding-jdbc 分库分表`
+、`zookeeper` 、`web人脸识别` 、`实时消息推送` 、`SQL优化`、`注册中心` 、`数据脱敏` 等互联网主流技术， 文章图解理论配合实战案例，实现开发中常见功能点的综合项目。
 本着拿来即用的原则，助力于减少开发者在工作中的学习成本。
 
 中间件 | 已整合的功能
@@ -48,9 +47,8 @@
 
 - 《LeetCode算法笔记》
 
-
-**获取方式**：[公众号：**程序员小富** , 回复 **1222**](https://mp.weixin.qq.com/s?__biz=MzAxNTM4NzAyNg==&mid=2247500646&idx=1&sn=5a0993997dc1fc609da4eda5ba610681&chksm=9b86539bacf1da8d2bc22b569d27e1b7b85a21a0ec7d5a5f4a6660148a5f40f076e2d42e4885&token=1045698719&lang=zh_CN#rd)
-
+**获取方式**：[公众号：**程序员小富** , 回复 **
+1222**](https://mp.weixin.qq.com/s?__biz=MzAxNTM4NzAyNg==&mid=2247500646&idx=1&sn=5a0993997dc1fc609da4eda5ba610681&chksm=9b86539bacf1da8d2bc22b569d27e1b7b85a21a0ec7d5a5f4a6660148a5f40f076e2d42e4885&token=1045698719&lang=zh_CN#rd)
 
 ### 电子书
 
@@ -188,13 +186,6 @@
 ### 求职
 
 - [看了 100多份简历后，想给找工作的程序员几点建议](https://mp.weixin.qq.com/s/iVBbzaNpC--Tk6c-JfwtUQ)
-
-
-
-
-
-
-
 
 > 欢迎关注公众号、或者添加个人微信：xinzhifu521，加群学习
 

@@ -9,6 +9,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * 账户服务
+ *
  * @author 小富 ，公众号：程序员内点事
  */
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
@@ -17,8 +18,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 public class AccountServerApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(AccountServerApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(AccountServerApplication.class, args);
+    }
 
 }

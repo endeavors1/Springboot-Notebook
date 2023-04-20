@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * @author xinzhifu
  * @description 范围分表算法
- * @date    2020/11/2 12:06
+ * @date 2020/11/2 12:06
  */
 public class MyTableRangeShardingAlgorithm implements RangeShardingAlgorithm<Integer> {
 

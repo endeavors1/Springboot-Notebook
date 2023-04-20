@@ -22,7 +22,7 @@ public class DataSourceAop {
         //获得访问的方法名
         String methodName = point.getSignature().getName();
         //得到方法的参数的类型
-        Class[] argClass = ((MethodSignature)point.getSignature()).getParameterTypes();
+        Class[] argClass = ((MethodSignature) point.getSignature()).getParameterTypes();
         //获取默认的数据源名称
         String dataSource = DataSourceContextHolder.DEFAULT_DS;
         try {
@@ -40,9 +40,9 @@ public class DataSourceAop {
         // 切换数据源
         DataSourceContextHolder.setDb(dataSource);
     }
- 
+
     @After("@annotation(TargetDataSource)")
-    public void afterSwitchDS(JoinPoint point){
+    public void afterSwitchDS(JoinPoint point) {
         DataSourceContextHolder.clearDB();
         //DataSourceContextHolder.switchDefault();//每次执行完都切回原默认数据库
     }

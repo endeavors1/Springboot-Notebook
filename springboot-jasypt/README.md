@@ -1,8 +1,6 @@
+### 启动命令 并注入 秘钥配置
 
-
-### 启动命令 并注入 秘钥配置 
-
->jasypt.encryptor.password=mypassword
+> jasypt.encryptor.password=mypassword
 
 ```java
 
@@ -15,9 +13,9 @@ java -jar -Djasypt.encryptor.password=${JASYPT_PASSWORD} xxx.jar
 
 ### 生成待加密的文本内容
 
-> maven包路径 D:\maven_lib\org\jasypt\jasypt\1.9.3\jasypt-1.9.3.jar 
+> maven包路径 D:\maven_lib\org\jasypt\jasypt\1.9.3\jasypt-1.9.3.jar
 
-> input  待加密文本
+> input 待加密文本
 
 > password 秘钥文本
 

@@ -91,7 +91,7 @@ public class FileController {
             }
 
             @Override
-            public void progress(long progressSize,long allSize) {
+            public void progress(long progressSize, long allSize) {
                 System.out.println("已下载 " + progressSize + " 总大小" + allSize);
             }
 

@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringbootDatasourcesRollbackApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringbootDatasourcesRollbackApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringbootDatasourcesRollbackApplication.class, args);
+    }
 
 }

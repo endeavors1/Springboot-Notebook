@@ -1,0 +1,16 @@
+server:
+  port: 8800   #启动端口号  命令行注入
+spring:
+  application:
+    name: nacosdemo
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848  #配置中心
+        file-extension: yaml   #配置文件后缀名   dataId = application.name  +  file-extension
+        namespace: 8c537731-ed1c-4d48-9c37-7a3cab68c1cb  #测试空间
+        group: TEST_GROUP    #测试组
+
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 8c537731-ed1c-4d48-9c37-7a3cab68c1cb  #测试空间

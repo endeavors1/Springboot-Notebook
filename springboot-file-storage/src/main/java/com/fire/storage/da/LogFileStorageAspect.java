@@ -23,9 +23,9 @@ public class LogFileStorageAspect implements FileStorageAspect {
      */
     @Override
     public FileInfo uploadAround(UploadAspectChain chain, FileInfo fileInfo, UploadPretreatment pre, FileStorage fileStorage, FileRecorder fileRecorder) {
-        log.info("上传文件 before -> {}",fileInfo);
-        fileInfo = chain.next(fileInfo,pre,fileStorage,fileRecorder);
-        log.info("上传文件 after -> {}",fileInfo);
+        log.info("上传文件 before -> {}", fileInfo);
+        fileInfo = chain.next(fileInfo, pre, fileStorage, fileRecorder);
+        log.info("上传文件 after -> {}", fileInfo);
         return fileInfo;
     }
 
@@ -34,9 +34,9 @@ public class LogFileStorageAspect implements FileStorageAspect {
      */
     @Override
     public boolean deleteAround(DeleteAspectChain chain, FileInfo fileInfo, FileStorage fileStorage, FileRecorder fileRecorder) {
-        log.info("删除文件 before -> {}",fileInfo);
-        boolean res = chain.next(fileInfo,fileStorage,fileRecorder);
-        log.info("删除文件 after -> {}",res);
+        log.info("删除文件 before -> {}", fileInfo);
+        boolean res = chain.next(fileInfo, fileStorage, fileRecorder);
+        log.info("删除文件 after -> {}", res);
         return res;
     }
 
@@ -45,9 +45,9 @@ public class LogFileStorageAspect implements FileStorageAspect {
      */
     @Override
     public boolean existsAround(ExistsAspectChain chain, FileInfo fileInfo, FileStorage fileStorage) {
-        log.info("文件是否存在 before -> {}",fileInfo);
-        boolean res = chain.next(fileInfo,fileStorage);
-        log.info("文件是否存在 after -> {}",res);
+        log.info("文件是否存在 before -> {}", fileInfo);
+        boolean res = chain.next(fileInfo, fileStorage);
+        log.info("文件是否存在 after -> {}", res);
         return res;
     }
 
@@ -56,19 +56,19 @@ public class LogFileStorageAspect implements FileStorageAspect {
      */
     @Override
     public void downloadAround(DownloadAspectChain chain, FileInfo fileInfo, FileStorage fileStorage, Consumer<InputStream> consumer) {
-        log.info("下载文件 before -> {}",fileInfo);
-        chain.next(fileInfo,fileStorage,consumer);
-        log.info("下载文件 after -> {}",fileInfo);
+        log.info("下载文件 before -> {}", fileInfo);
+        chain.next(fileInfo, fileStorage, consumer);
+        log.info("下载文件 after -> {}", fileInfo);
     }
 
     /**
      * 下载缩略图文件
      */
     @Override
-    public void downloadThAround(DownloadThAspectChain chain,FileInfo fileInfo,FileStorage fileStorage,Consumer<InputStream> consumer) {
-        log.info("下载缩略图文件 before -> {}",fileInfo);
-        chain.next(fileInfo,fileStorage,consumer);
-        log.info("下载缩略图文件 after -> {}",fileInfo);
+    public void downloadThAround(DownloadThAspectChain chain, FileInfo fileInfo, FileStorage fileStorage, Consumer<InputStream> consumer) {
+        log.info("下载缩略图文件 before -> {}", fileInfo);
+        chain.next(fileInfo, fileStorage, consumer);
+        log.info("下载缩略图文件 after -> {}", fileInfo);
     }
 }
 

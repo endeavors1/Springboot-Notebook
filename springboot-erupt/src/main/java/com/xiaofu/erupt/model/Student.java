@@ -29,7 +29,7 @@ import java.util.Date;
  */
 @Getter
 @Setter
-@Erupt(name = "学生表",dataProxy = {StudentDataProxy.class},
+@Erupt(name = "学生表", dataProxy = {StudentDataProxy.class},
         power = @Power(importable = true, export = true)
 )
 @Entity

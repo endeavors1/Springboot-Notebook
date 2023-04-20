@@ -12,7 +12,7 @@ public class QuartzDemo {
 
     //每隔五秒
     @Scheduled(cron = "0/5 * * * * ? ")
-    public void process(){
+    public void process() {
 
         System.out.println("我是定时任务！");
     }

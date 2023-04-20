@@ -22,7 +22,8 @@ public class TimeController {
         OrderInfo order = new OrderInfo();
         order.setCreateTime(LocalDateTime.now());
         order.setUpdateTime(new Date());
-        model.addAttribute("order",order);
+        model.addAttribute("order", order);
+        System.out.println(order);
         System.out.println(JSON.toJSONString(order));
         return "index";
     }
@@ -36,7 +37,7 @@ public class TimeController {
         return order;
     }
 
-    public class OrderInfo implements Serializable{
+    public class OrderInfo implements Serializable {
 
         //@JsonFormat(locale = "zh", timezone = "GMT+8", pattern = "yyyy-MM-dd")
         private LocalDateTime createTime;
@@ -58,6 +59,12 @@ public class TimeController {
 
         public void setUpdateTime(Date updateTime) {
             this.updateTime = updateTime;
+        }
+
+
+        @Override
+        public String toString() {
+            return "{createTime:"+createTime+",updateTime:"+updateTime+"}";
         }
     }
 }

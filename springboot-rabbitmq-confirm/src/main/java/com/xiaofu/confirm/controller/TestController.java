@@ -24,10 +24,10 @@ public class TestController {
 
         //sendMessage.sendMessage("", "confirm_test_queue", "0" );
 
+        System.out.println("producer开始产生消息------------------------");
+        for (int i = 0; i < 1; i++) {
 
-        for (int i = 0; i < 5; i++) {
-
-            sendMessage.sendMessage("", "confirm_test_queue",  "发送者消息");
+            sendMessage.sendMessage("", "confirm_test_queue", "发送者消息"+i);
         }
 
         return "success";

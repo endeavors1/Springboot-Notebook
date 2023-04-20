@@ -23,51 +23,52 @@ public class UserTest extends AbstractTestNGSpringContextTests {
     }
 
     @BeforeSuite
-    public void beforeSuite(){
+    public void beforeSuite() {
         log.info("beforeSuite");
     }
 
     @AfterSuite
-    public void afterSuite(){
+    public void afterSuite() {
         log.info("AfterSuite");
     }
 
     @BeforeClass
-    public void beforeClass(){
+    public void beforeClass() {
         log.info("BeforeClass");
     }
 
     @AfterClass
-    public void afterClass(){
+    public void afterClass() {
         log.info("AfterClass");
     }
 
     @BeforeTest
-    public void beforeTest(){
+    public void beforeTest() {
         log.info("BeforeTest");
     }
 
     @AfterTest
-    public void afterTest(){
+    public void afterTest() {
         log.info("AfterTest");
     }
 
-    @BeforeGroups(groups="user")
-    public void beforeGroups(){
+    @BeforeGroups(groups = "user")
+    public void beforeGroups() {
         log.info("BeforeGroups");
     }
-    @AfterGroups(groups="user")
-    public void afterGroups(){
+
+    @AfterGroups(groups = "user")
+    public void afterGroups() {
         log.info("AfterGroups");
     }
 
     @BeforeMethod
-    public void BeforeMethod(){
+    public void BeforeMethod() {
         log.info("BeforeMethod");
     }
 
     @AfterMethod
-    public void AfterMethod(){
+    public void AfterMethod() {
         log.info("AfterMethod");
     }
 
@@ -77,7 +78,7 @@ public class UserTest extends AbstractTestNGSpringContextTests {
         System.out.println("get token");
     }
 
-    @Test(dependsOnMethods= {"token"})
+    @Test(dependsOnMethods = {"token"})
     public void getUser() {
         System.out.println("this is test getUser");
     }
